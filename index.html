@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+  
+    <link href="gato.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi gatito thomas💞</title>
+   
+     </style>
+ </head>
+ <body>
+     <h1>¡Para mi bebé hermoso💘💘!</h1>
+     <button onclick="showKitten()">¡¡Lo que siento por ti💕💗!</button>
+ 
+     <div class="hearts">
+        <!-- Contenedor para los corazones flotantes -->
+    </div>
+
+    <script>
+        // Generar corazones flotantes
+        function createHearts() {
+            const heartsContainer = document.querySelector('.hearts');
+
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = Math.random() * 3 + 6 + 's';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        createHearts();
+    </script>
+         
+     </script>
+ </body>
+ </html>
+</head>
+<body>
+    
+    
+    <audio autoplay loop>
+        <source src="musica/" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+    
+
+    <div class="kitten-popup">
+        <img src="pngwing.com.png" alt="Kitten peeking">
+    </div>
+
+    <header>
+        <h1>  Michimer ( •̀ ω •́ )✧</h1>
+    </header>
+
+    <div class="container">
+        <p class="message">Una página que te hice con todo mi amor y corazón llena de recuerdos inolvidables💌💟💝💗</p>
+        <div class="color-picker">
+            <button onclick="changeBackground('#ffebef')">Color Rosa</button>
+            <button onclick="changeBackground('#f9d29d')">Color Durazno</button>
+            <button onclick="changeBackground('#d1e7b7')">Color Verde</button>
+        </div>
+
+        <div class="gallery">
+            <img src="Imagen de WhatsApp 2025-01-20 a las 12.30.37_e913e929.jpg" alt="Kitten 1">
+            <img src="Imagen de WhatsApp 2025-01-20 a las 12.33.26_060f7b63.jpg" alt="Kitten 2">
+            <img src="Imagen de WhatsApp 2025-01-20 a las 12.48.11_fae717a0.jpg" alt="Kitten 3">
+            <img src="Imagen de WhatsApp 2025-01-20 a las 13.19.20_e49d8472.jpg" alt="Kitten 4">
+            <img src="Imagen de WhatsApp 2025-01-20 a las 13.20.57_1448f412.jpg" alt="Kitten 5">
+        </div>
+
+        <div class="videos">
+            <h2>Algunos videos especiales para ti 🎥</h2>
+            <div class="video-item">
+                <iframe src="Collage de video feliz cumpleaños ilustrado lila y rosa.mp4" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="gatitoslindos.mp4" allowfullscreen></iframe>
+            </div>
+        </div>
+
+      
+       
+        
+            </style>
+        </head>
+        <body>
+           
+           
+        
+            <!-- Modal -->
+            <div class="modal" id="kittenModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeKitten()">&times;</span>
+                    <img src="meow.jpg" alt="Kitten">
+                </div>
+            </div>
+        
+            <script>
+                // Mostrar el modal con la imagen del gatito
+                function showKitten() {
+                    const modal = document.getElementById('kittenModal');
+                    modal.style.display = 'flex';
+                }
+        
+                // Cerrar el modal
+                function closeKitten() {
+                    const modal = document.getElementById('kittenModal');
+                    modal.style.display = 'none';
+                }
+            </script>
+        </body>
+      
+        
+
+    <footer>
+        <p>Hecho con mucho <span>💞💗</span> para ti.</p>
+    </footer>
+
+    <script>
+        // Animar imágenes al aparecer en pantalla
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        galleryImages.forEach(img => observer.observe(img));
+
+        // Mostrar gatito flotante
+        const kittenPopup = document.querySelector('.kitten-popup');
+        setTimeout(() => {
+            kittenPopup.classList.add('show');
+        }, 1000);
+
+        // Mostrar alerta con gatito
+      
+
+        // Cambiar color de fondo
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
+
+
